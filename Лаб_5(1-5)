@@ -59,7 +59,7 @@ int main(void)
     printf("Введите точку B: ");
     scanf ("%f", &B);
  
-    printf("Введите точку C: ");
+    printf("Введите точку C, находящуюся между А и В: ");
     scanf ("%f", &C);
  
     AC = fabsf(A-C);
@@ -93,7 +93,6 @@ int main(void)
     return 0;
 }
 //задание 5
-#include <stdio.h>
 #include <math.h>
  
 int main(void)
@@ -125,6 +124,7 @@ int main(void)
     p=(a+b+c)/2;
     S=sqrt(p*(p-a)*(p-b)*(p-c));
     printf("Площадь треугольника равна: :%f\n",S);
+    printf("Периметр треугольника равен: :%f\n", p*2);
  
     return 0;
 }

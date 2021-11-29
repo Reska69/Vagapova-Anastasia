@@ -1,0 +1,131 @@
+//задание 1
+#include <stdio.h>
+#include <math.h>
+ 
+int main(void)
+{
+    float A,B;
+    printf("Введите A:");
+    scanf ("%f", &A);
+    printf("Введите B:");
+    scanf ("%f", &B);
+ 
+  A=A+B;
+  B=A-B;
+  A=A-B;
+ 
+  printf("\nA:%f\nB:%f\n",A,B);
+ 
+    return 0;
+}
+//задание 2
+#include <stdio.h>
+ 
+int main(void)
+{
+    float A,B,C;
+    printf("Введите A:");
+    scanf ("%f", &A);
+ 
+    printf("Введите B:");
+    scanf ("%f", &B);
+ 
+    printf("Введите C:");
+    scanf ("%f", &C);
+ 
+    A=A+B+C;
+    B=A-B-C;
+    C=A-B-C;
+    A=A-B-C;
+ 
+    printf("\nA:%f\nB:%f\nC:%f\n",A,B,C);
+ 
+    return 0;
+}
+//задание 3
+#include <stdio.h>
+
+int main()
+{
+    int a, b, c, dam;
+    
+    printf ("Введите A: ");
+    scanf("%d", &a);
+    printf ("Введите B: ");
+    scanf("%d", &b);
+    printf ("Введите C: ");
+    scanf("%d", &c);
+    
+    dam=a;
+    a=c;
+    c=b;
+    b=dam;
+    
+    printf("Новые значения:\n А=%d, В=%d и С=%d", a, b, c);
+    return 0;
+}
+//Задание 4
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    double x, y;
+    
+    printf ("Введите X: ");
+    scanf("%lf", &x);
+    
+    y = 3 * x*x*x*x*x*x - 6 * x*x - 7;
+
+    printf("Значение функции y = 3x^6 − 6x^2 − 7 равно: \n Y = %lf", y);
+    return 0;
+}
+//Задание 5
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    double x, y, t, k;
+    
+    printf ("Введите X: ");
+    scanf("%lf", &x);
+    
+    k = x-3;
+    t = k*k*k;
+    y = 4*t*t - 7*t + 2;
+
+    printf("Значение функции y = 4(x−3)^6 − 7(x−3)^3 + 2  равно: \n Y = %lf", y);
+    return 0;
+}
+//Задание 6
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    double a, t;
+    
+    printf ("Введите A: ");
+    scanf("%lf", &a);
+    
+    t=a*a*a*a;
+    a=t*t;
+
+    printf("A^8 = %lf", a);
+    return 0;
+}
+//Задание 7
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    double a, t, k;
+    
+    printf ("Введите A: ");
+    scanf("%lf", &a);
+    
+    t=a*a*a;
+    k=t*t*t;
+    a=k*t*t;
+
+    printf("A^15 = %lf", a);
+    return 0;
+}

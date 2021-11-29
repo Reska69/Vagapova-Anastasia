@@ -23,22 +23,21 @@ int main(void)
  
 int main(void)
 {
-    float A,B,C;
-    printf("Введите A:");
-    scanf ("%f", &A);
+    int a, b, c, dam;
+    
+    printf("Введите A: ");
+    scanf ("%d", &a);
+    printf("Введите B: ");
+    scanf ("%d", &b);
+    printf("Введите C: ");
+    scanf ("%d", &c);
+    
+    dam=a;
+    a=b;
+    b=c;
+    c=dam;
  
-    printf("Введите B:");
-    scanf ("%f", &B);
- 
-    printf("Введите C:");
-    scanf ("%f", &C);
- 
-    A=A+B+C;
-    B=A-B-C;
-    C=A-B-C;
-    A=A-B-C;
- 
-    printf("\nA:%f\nB:%f\nC:%f\n",A,B,C);
+     printf("Новые значения:\n А=%d, В=%d и С=%d", a, b, c);
  
     return 0;
 }
@@ -69,12 +68,13 @@ int main()
 #include <math.h>
 int main()
 {
-    double x, y;
+    double x, y, t;
     
     printf ("Введите X: ");
     scanf("%lf", &x);
     
-    y = 3 * x*x*x*x*x*x - 6 * x*x - 7;
+    t=x*x;
+    y = 3 * t*t*t - 6 * t - 7;
 
     printf("Значение функции y = 3x^6 − 6x^2 − 7 равно: \n Y = %lf", y);
     return 0;
@@ -122,9 +122,9 @@ int main()
     printf ("Введите A: ");
     scanf("%lf", &a);
     
-    t=a*a*a;
-    k=t*t*t;
-    a=k*t*t;
+    t=a*a;
+    k=t*t*t*t;
+    a=k*k/a;
 
     printf("A^15 = %lf", a);
     return 0;

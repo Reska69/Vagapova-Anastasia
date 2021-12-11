@@ -1,0 +1,69 @@
+//задание 1
+#include <stdio.h>
+ 
+int main(void)
+{
+   int A,B;
+   printf("A:");
+   scanf ("%i", &A);
+ 
+   printf("B:");
+   scanf ("%i", &B);
+ 
+   printf("Истинность высказывания (A>2) & (B<=3) = %d\n", (A>2) & (B<=3));
+   return 0;
+}
+//задание 2
+#include <stdio.h>
+ 
+int main(void)
+{
+   int A,B,C;
+   printf("A:");
+   scanf ("%i", &A);
+ 
+   printf("B:");
+   scanf ("%i", &B);
+ 
+   printf("C:");
+   scanf ("%i", &C);
+ 
+   printf("Истинность высказывания A < B < C = %d\n", (A<B) & (B<C));
+   return 0;
+}
+//задание 3
+#include <stdio.h>
+ 
+int main(void)
+{
+    int A;
+   printf("A:");
+   scanf ("%i", &A);
+ 
+   if ((A>9) && (A<100) && (A%2==0))
+   printf("Данное число является четным двузначным");
+   else printf("Данное число НЕ является четным двузначным");
+   return 0;
+}
+//задание 4
+#include <stdio.h>
+#include <math.h>
+
+int main(void)
+{
+   int A;
+   printf("A:");
+   scanf ("%i", &A);
+ 
+   A=fabsf (A);
+   if (((A/100)>(A%100/10)) && ((A%100/10)>(A%10)))
+   printf("Цифры данного числа образуют убывающую последовательность"); 
+   else {
+   if (((A/100)<(A%100/10)) && ((A%100/10)<(A%10)))
+   printf("Цифры данного числа образуют возрастающую последовательность"); 
+   else printf("Цифры данного числа НЕ образуют возрастающую или убывающую последовательность"); 
+   }
+   
+   return 0;
+}
+//задание 5

@@ -1,0 +1,49 @@
+//задание 1
+#include <stdio.h>
+
+int main()
+{
+    int d, m;
+    printf("Введите месяц: ");
+    scanf("%d", &m);
+    printf("Введите день: ");
+    scanf("%d", &d);
+    
+    switch (m) {
+        case 1:
+          printf("Сегодня %d января", d);
+          break;
+        case 2:
+          printf("Сегодня %d февраля", d);
+          break;
+        case 3:
+          printf("Сегодня %d марта", d);
+          break;
+        case 4:
+          printf("Сегодня %d апреля", d);
+          break;
+        case 5:
+          printf("Сегодня %d мая", d);
+          break;
+        case 6:
+          printf("Сегодня %d июня", d);
+          break;
+        case 7:
+          printf("Сегодня %d июля", d);
+          break;
+        case 8:
+          printf("Сегодня %d августа", d);
+          break;
+        case 9:
+          printf("Сегодня %d сентября", d);
+          break;
+        case 10:
+          printf("Сегодня %d октября", d);
+          break;
+        case 11:
+          printf("Сегодня %d ноября", d);
+          break;
+        case 12:
+          printf("Сегодня %d декабря", d);
+          break;
+    }

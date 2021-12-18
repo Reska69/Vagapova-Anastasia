@@ -45,26 +45,36 @@ int main(void)
 //задание 3
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
  
 int main(void)
 {
-   float a, b, c, m, n;
-   printf("A:");
-   scanf ("%f", &a);
+   float a1, a2, b1, b2, c1, c2, ab, ac;
+   printf("A:\n");
+   printf("x:");
+   scanf ("%f", &a1);
+   printf("y:");
+   scanf ("%f", &a2);
    printf("B:");
-   scanf ("%f", &b);
+   printf("x:");
+   scanf ("%f", &b1);
+   printf("y:");
+   scanf ("%f", &b2);
    printf("C:");
-   scanf ("%f", &c);
+   printf("x:");
+   scanf ("%f", &c1);
+   printf("y:");
+   scanf ("%f", &c2);
  
-   m=abs(a-b);
-   n=abs(a-c);
-   if (m<n)  {
+   ab=sqrt((a1-b1)*(a1-b1)+(a2-b2)*(a2-b2));
+   ac=sqrt((a1-c1)*(a1-c1)+(a2-c2)*(a2-c2));
+   if (ab<ac)  {
        printf("Ближайшая к А точка: B\n");
-       printf("Расстояние между А и В: %f\n", m);
+       printf("Расстояние между А и В: %f\n", ab);
        }
    else { 
        printf("Ближайшая к А точка: C\n");
-       printf("Расстояние между А и В: %f\n", m);
+       printf("Расстояние между А и В: %f\n", ac);
    }
  
    return 0;
